@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- preload all the icon colour variations -->
+    <link rel="preload" as="image" href="assets/images/KV d-blue.png">
+    <link rel="preload" as="image" href="assets/images/KV l-blue.png">
+    <link rel="preload" as="image" href="assets/images/KV white.png">
+    <link rel="preload" as="image" href="assets/images/KV black.png">
+    <link rel="preload" as="image" href="assets/images/headshot.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="assets/images/KV black.png"/>
+    <title>Kimberly Valenny</title>
+</head>
+<body>
+    <nav id="nav" class="nav" onscroll="scroll()">
+        <a class="logo" href="#intro">
+            <img src="assets/images/KV white.png">
+        </a>
+        <ul class="nav-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="intro" class="intro">
+        <div id="particles-js"></div>
+
+        <div class="intro-text">
+            <h3 id="subtitle">Hey, I'm</h3>
+            <h1 id="title">Kimberly <br> Valenny</h1>
+            <p>Computer Science / Interaction Design student</p>
+            <a href="#about"><button>About me</button></a>
+        </div>
+
+        <div class="headshot">
+            <img src="assets/images/kimvalenny.png">
+        </div>
+    </section>
+
+    <main>
+        <section id="about" class="about">
+            <article>
+                <h1>Hi! I'm Kimberly &#10024;</h1>
+                <p>I'm in my fourth and final year of a double degree in Information Technology and Creative Industries at QUT, with majors in Computer Science and Interactive & Visual Design. I'm also this year's President of Women in Technology, a student society that aims to unite, inspire and empower strong like-minded females studying all things tech at QUT.</p>
+
+                <p>Inspired by the seamless fusion of design and development, I'm passionate about helping a client turn their idea into a reality by working with them to develop a strong vision and see it through to the end. I'm motived by emerging technologies and how I can contribute to the future of user experience design and software development.</p>
+
+                <p>I was a recent Front-End Developer intern at Deloitte Digital, and I will be returning next year as a Graduate. In the meantime, I am tutoring as a Sessional Academic at QUT for a first year 'Introduction to Web Design' unit. During the school holidays, I teach primary school students how to create their own games using drag-and-drop coding as part of the Code Camp team, while also engaging in the role of an Area Coordinator that assists with the operation of camps around the Brisbane and Gold Coast areas.</p>
+
+                <p>When I'm not studying or working, I'm usually hiking somewhere in the hinterlands, going rock-climbing, ice-skating, or just exploring somewhere new!</p>
+            </article> 
+        </section>
+
+        <section id="experience" class="experience">
+            <article>
+                <h1>Experience</h1>
+                <div class="experience-container">
+
+                    <input hidden type="radio" name="carousel-control" id="experience_button_1" checked />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_2" />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_3" />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_4" />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_5" />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_6" />
+                    <input hidden type="radio" name="carousel-control" id="experience_button_7" />
+                  
+                    <div class="experience-navigation">
+                        <label for="experience_button_1" class="label_1"> <span>01</span> </label>
+                        <label for="experience_button_2" class="label_2"> <span>02</span> </label>
+                        <label for="experience_button_3" class="label_3"> <span>03</span> </label>
+                        <label for="experience_button_4" class="label_4"> <span>04</span> </label>
+                        <label for="experience_button_5" class="label_5"> <span>05</span> </label>
+                        <label for="experience_button_6" class="label_6"> <span>06</span> </label>
+                        <label for="experience_button_7" class="label_7"> <span>07</span> </label>
+                    </div>
+                  
+                    <div id="carousel">
+                        <div class="panel-wrapper">
+                    
+                            <section class="panel_1">
+                                <div class="panel-text">
+                                    <h2>Queensland University of Technology</h2>
+                                    <h3>Sessional Academic &nbsp; | &nbsp; July 2021 - Present</h3>
+                                    <p>Part-time position as a tutor for DXB111 Introduction to Web Design, introducing the concepts and skills that underpin the user-centred design of websites to first and second year students.</p>
+                                    <h3>Faculty Student Ambassador &nbsp; | &nbsp; June 2021 - August 2021</h3>
+                                    <p>Casual position as a student ambassador for the Faculty of Science at QUT, promoting the study of technology to prospective students, and encouraging the pursuit of the STEM fields at events such as Open Day.</p>
+                                </div>
+                            </section>
+                    
+                            <section class="panel_2">
+                                <div class="panel-text">
+                                    <h2>Women in Technology at QUT</h2>
+                                    <h3>President &nbsp; | &nbsp; January 2021 - Present</h3>
+                                    <p>Casual position as the leader of a social club at QUT that unites, inspires and empowers women studying technology and pursuing tech fields.</p>
+                                    <h3>Graphics Designer &nbsp; | &nbsp; January 2020 - December 2020</h3>
+                                    <p>Casual volunteer position as part of the Women in Tech marketing team that enhances the club's visuals and digital presence across multiple social media platforms.</p>
+                                </div>
+                            </section>
+                    
+                            <section class="panel_3">
+                                <div class="panel-text">
+                                    <h2>Code Camp Australia</h2>
+                                    <h3>Area Coordinator &nbsp; | &nbsp; November 2019 - Present</h3>
+                                    <p>Casual position with a national company that supports the Queensland Directors in their operations and management of the Brisbane and Gold Coast areas. Responsibilities include the organisation of camp equipment and presenting at school assemblies.</p>
+                                    <h3>Head Teacher &nbsp; | &nbsp; July 2017 - Present</h3>
+                                    <p>Casual position as a teacher, educating children aged six to twelve how to code and make their own apps and games during school holidays and after-school programs.</p>
+                                </div>
+                            </section>
+                    
+                            <section class="panel_4">
+                                <div class="panel-text">
+                                    <h2>Deloitte Digital Australia</h2>
+                                    <h3>Undergraduate Intern &nbsp; | &nbsp; March 2021 - June 2021</h3>
+                                    <p>Internship position as a Front-End Developer within Deloitte Digital Brisbane, a digital creative consultancy that provides digital solutions to enterprise and large corporations across Australia.</p>
+                                    <h3>Summer Vacationer &nbsp; | &nbsp; November 2020 - December 2020</h3>
+                                    <p>Internship position in front-end development, gaining experience in multiple programming languages, the integration of content management systems, and an introduction into consultancy.</p>
+                                </div>
+                            </section>
+                            
+                            <section class="panel_5">
+                                <div class="panel-text">
+                                    <h2>Girls Programming Network</h2>
+                                    <h3>Tutor &nbsp; | &nbsp; April 2021</h3>
+                                    <p>One-day program as a volunteer tutor that supported high school girls aged twelve to seventeen with expressing their interest in learning programming. The students involved were able to write their own working 'scissors, paper, rock' game in Python.</p>
+                                </div>
+                            </section>
+                    
+                            <section class="panel_6">
+                                <div class="panel-text">
+                                    <h2>Thanks Mel</h2>
+                                    <h3>Software Developer Intern &nbsp; | &nbsp; April 2020 - July 2020</h3>
+                                    <p>Internship position supporting a software house that specialises in improving everyday life of people through business and personal apps. The project undertaken during this three-month internship was a cloud-based digital personal assistant to help mums carry the mental load and managing a household.</p>
+                                </div>
+                            </section>
+                    
+                            <section class="panel_7">
+                                <div class="panel-text">
+                                    <h2>Deloitte Australia</h2>
+                                    <h3>Insider Program Participant &nbsp; | &nbsp; October 2019</h3>
+                                    <p>One-day program providing an insight into Deloitte Australia such as highlighting the company's goals and units, creating networks, showcasing career opportunities, interviewing a panel of graduate students and shadowing current team members.</p>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                  </div>
+            </article>
+        </section>
+
+        <section id="projects" class="projects">
+            <article>
+                <h1>Projects</h1>
+                <section class="projects-container">
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/TechPanel.jpg">
+                        <div class="project-overview">
+                            <h2>QUT Tech Industry Panel</h2>
+                            <p class="project-tag">Women in Tech</p>
+                            <p class="project-tag">Networking</p>
+                            <p class="summary">An evening of networking and insightful discussions to shed some light on the Tech industry.</p>
+                            <button class="modal-button" onclick="openOverlay('projectTechPanel')">Read More</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/VirtualOpenDay.jpg">
+                        <div class="project-overview">
+                            <h2>QUT Virtual Open Day</h2>
+                            <p class="project-tag">QUT STEM</p>
+                            <p class="project-tag">Women in Tech</p>
+                            <p class="summary">A webinar for Open Day that promotes the study of technology and all STEM fields at QUT.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                    <div class="project right-element">
+                        <img class="project-cover" src="assets/projects/WomenInSTEM.jpg">
+                        <div class="project-overview">
+                            <h2>Women in STEM Industry Night</h2>
+                            <p class="project-tag">Women in Tech</p>
+                            <p class="project-tag">Networking</p>
+                            <p class="summary">An evening of fostering, supporting and celebrating the importance of women in the STEM fields.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                </section>
+                <section class="projects-container">
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/CCS.png">
+                        <div class="project-overview">
+                            <h2>Childhood Cancer Support</h2>
+                            <p class="project-tag">Web Dev</p>
+                            <p class="project-tag">Consulting</p>
+                            <p class="summary">A rejuvenated responsive website for a cancer charity that utilises content management systems.</p>
+                            <button class="modal-button" onclick="openOverlay('projectCCS')">Read More</button>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/SoBraveApp.png">
+                        <div class="project-overview">
+                            <h2>So Brave Mobile App</h2>
+                            <p class="project-tag">App Dev</p>
+                            <p class="project-tag">In Progress</p>
+                            <p class="summary">A mobile application for a breast cancer charity that helps young females become breast aware.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                    <div class="project right-element">
+                        <img class="project-cover" src="assets/projects/DXB212.jpg">
+                        <div class="project-overview">
+                            <h2>The Lumiere Handbag</h2>
+                            <p class="project-tag">Software Dev</p>
+                            <p class="project-tag">Uni Project</p>
+                            <p class="summary">A tangible media prototype that focuses on the idea of social distancing and the safety of women.</p>
+                            <button class="modal-button" onclick="openOverlay('projectDXB212')">Read More</button>
+                        </div>
+                    </div>
+                </section>
+                <section class="projects-container">
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/DXB111.png">
+                        <div class="project-overview">
+                            <h2>The Gallivanter</h2>
+                            <p class="project-tag">Web Dev</p>
+                            <p class="project-tag">Uni Project</p>
+                            <p class="summary">A responsive travel guide website that explores all the beautiful destinations Italy has to offer.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="project-cover" src="assets/projects/KPB101.jpg">
+                        <div class="project-overview">
+                            <h2>Win Big, Lose Bigger</h2>
+                            <p class="project-tag">Film & Media</p>
+                            <p class="project-tag">Uni Project</p>
+                            <p class="summary">A short documentary on gambling addiction, and how Australians who have won big have lost bigger.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                    <div class="project right-element">
+                        <img class="project-cover" src="assets/projects/KKB185.jpg">
+                        <div class="project-overview">
+                            <h2>Key Street</h2>
+                            <p class="project-tag">Client Brief</p>
+                            <p class="project-tag">Uni Project</p>
+                            <p class="summary">A large footpath instrument that aims to bring life and vibrancy into a dull part of King Street.</p>
+                            <!-- <button class="modal-button" onclick="openOverlay()">Read More</button> -->
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+            <!-- THE PROJECT OVERLAYS -->
+            <div id="project-tech-panel" class="overlay">
+                <a class="cancel" onclick="closeOverlay()"></a>
+                <div class="modal">
+                    <div class="visuals">
+                        <div class="slide">
+                            <img src="assets/projects/TechPanel/1.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/projects/TechPanel/2.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/projects/TechPanel/3.jpg">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/projects/TechPanel/4.jpg">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div class="text">
+                        <h2>QUT Tech Industry Panel</h2>
+                        <p class="project-tag">Women in Tech</p>
+                        <p class="project-tag">Networking</p>
+                        <div class="content">
+                            <p>On Wednesday the 1st of September 2021, we hosted our QUT Tech Industry Panel & Networking night as a collaboration by Women in Technology at QUT, QUT White Hats and QUT Game Development Club.</p>
+
+                            <p>With over a hundred student guests and 35 industry representatives across 10 companies, we presented an evening of networking to successfully shed some light on the IT industry for QUT students. These companies included:</p>
+                            
+                            <ul>
+                                <li><a href="https://www.linkedin.com/company/deloitte-australia/" target="_blank">Deloitte</a> [Digital Consulting]</li>
+                                <li><a href="https://www.linkedin.com/company/suncorp/" target="_blank">Suncorp</a> [Software Engineering]</li>
+                                <li><a href="https://www.linkedin.com/company/swyftx/" target="_blank">Swyftx</a> [Cryptocurrency Exchange]</li>
+                                <li><a href="https://www.linkedin.com/company/amazon/" target="_blank">Amazon</a> [Software Development]</li>
+                                <li><a href="https://www.linkedin.com/company/recordpoint/" target="_blank">RecordPoint</a> [Information Management]</li>
+                                <li><a href="https://www.linkedin.com/company/maxkelsen/" target="_blank">Max Kelsen</a> [AI and Machine Learning]</li>
+                                <li><a href="https://www.linkedin.com/company/global-ntt/" target="_blank">NTT Ltd.</a> [Cyber Security]</li>
+                                <li><a href="https://www.linkedin.com/company/tesserent/" target="_blank">Tesserent</a> [Cyber Security]</li>
+                                <li><a href="https://www.linkedin.com/company/gameloft/" target="_blank">Gameloft</a> [Game Development]</li>
+                                <li><a href="https://www.linkedin.com/company/toast-vr-pty-ltd/" target="_blank">Toast VR</a> [Game Development]</li>
+                            </ul>
+                                
+                            <p>It was a pleasure to interview our panel of 10 industry representatives, who each provided valuable insights into their company, the future of the tech industry, and the importance of diversity in the tech space.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project-ccs" class="overlay">
+                <a class="cancel" onclick="closeOverlay()"></a>
+                <div class="modal">
+                    <div class="visuals">
+                        <video autoplay muted loop controls>
+                            <source src="assets/videos/CCS.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text">
+                        <h2>Childhood Cancer Support</h2>
+                        <p class="project-tag">Web Dev</p>
+                        <p class="project-tag">Consulting</p>
+                        <div class="content">
+                            <p>During my time at Deloitte as a Front-End Developer intern, I took part on a project that redesigned the website of <a href="https://www.ccs.org.au/" target="_blank">Childhood Cancer Support</a>, also known as CCS. We took the currently-existing CCS website and rejuvenated it to create a more up-to-date and modern platform for the clients to share their information.</p>
+
+                            <p>The website's old structure of a typical form, such as their Donate Now page, is quite outdated. There’s placeholder text that doesn't correlate to the right input fields, the drop down menu doesn’t span the entire width of the input box, and there are inconsistencies in element widths. The credit card module was messy and doesn’t come across as very user-friendly.</p>
+
+                            <p>With a redesign and improved structure of development, the input fields were transitioned to a more modern look, with less emphasis on the input borders and adding field labels as opposed to placeholder text. The card module has become much more user-friendly and visually pleasing, which allows users to feel less skeptical about inputting their details to donate.</p>
+
+                            <p>Through this client-focused project, I’ve learned to pay key attention to the small details, and to consider every possible user outcome. With multiple variations of error validation messages, supported by visual clues such as the red bolded borders, I’ve been able to take a step into what the experience would be like from a user point of view, and ensure that the website is structured to suit every need.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="project-dxb212" class="overlay">
+                <a class="cancel" onclick="closeOverlay()"></a>
+                <div class="modal">
+                    <div class="visuals">
+                        <video autoplay muted loop controls>
+                            <source src="assets/videos/DXB212.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="text">
+                        <h2>The Lumiere Handbag</h2>
+                        <p class="project-tag">Software Dev</p>
+                        <p class="project-tag">Uni Project</p>
+                        <div class="content">
+                            <p>Research demonstrates that 58.4% of women hold keys between their fingers when walking alone and 50% of women say physical attack is their second fear, followed by dying, burglary and mugging.</p>
+
+                            <p>The Lumiere Handbag is a tangible prototype created with the focus on the idea of social distancing and the safety of women, more specifically their possessions.</p>
+
+                            <p>Lumiere is ultimately targeted at women going to and from selected locations alone. This product encourages users to feel safer about their possessions during moments of uncertainty. As an example, when a woman is out alone late at night, she may start to feel unsafe. The woman turns on the green Lumiere flashing light on her handbag, increasing her confidence in the safety of her belongings and creating a sense of awareness for the individuals that pass by her.</p>
+                                
+                            <p>If an individual were tempted to grab her bag or move within close proximity to the user, the Lumiere Bag will immediately change to red, creating a warning signal for the individual. The colour red is psychologically characterised as symbolising 'danger' and 'help', subconsciously signaling to the stranger to keep their distance.</p>  
+
+                            <p>The prototype utilises an Arduino UNO, an external 9V battery holder and a 5 metre roll of RGB LED strip lights. For interactivity, the prototype uses an Infrared Receiver to pick up transmissions sent from a remote, as well as a small Infrared Sensor to detect physical motion from its surroundings.</p>
+                            
+                            <p>The program uploaded on the Arduino features a switch statement with six cases to determine what RGB colours to display in respect to which button has been pressed. It also includes a logical if statement to determine if the infrared sensor has detected movement, which overrides whatever colour the LEDs are currently showing and changes it to red.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <article>
+                <h1>Contact</h1>
+                <div class="contact-container">
+                    <div class="contact-details">
+                        <div class="contact-element">
+                            <a href="https://goo.gl/maps/TcCvmWR72TwYnsb67" target="_blank" class="fa fa-map-pin"></a>
+                            <div class="text">
+                                <h3>Location</h3>
+                                <p>Brisbane QLD, Australia</p>
+                            </div>
+                        </div>
+                        <div class="contact-element">
+                            <a href="mailto:kimberlyvalenny@outlook.com" class="fa fa-envelope"></a>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>kimberlyvalenny@outlook.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-element">
+                            <a href="https://www.linkedin.com/in/kimvalenny/" target="_blank" class="fa fa-linkedin"></a>
+                            <div class="text">
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/kimvalenny</p>
+                            </div>
+                        </div>
+                        <div class="contact-element">
+                            <a href="https://kimvalenny.com" target="_blank"><img src="assets/images/KV bold.png"></a>
+                            <div class="text">
+                                <h3>Portfolio</h3>
+                                <p>kimvalenny.com</p>
+                            </div>
+                        </div>
+                        <img class="contact-image" src="assets/images/headshot.png">
+                    </div>
+                    <div class="contact-form">
+                        <h3>Get in touch</h3>
+                        <form action="mailto:kimberlyvalenny@outlook.com" method="post" enctype="text/plain">
+                            <div class="form-element half-element">
+                                <label for="fname">First name</label>
+                                <input type="text" id="fname">
+                            </div>
+                            <div class="form-element half-element">
+                                <label for="lname">Last name</label>
+                                <input type="text" id="lname">
+                            </div>
+                            <div class="form-element">
+                                <label for="email">Email address</label>
+                                <input type="text" id="email">
+                            </div>
+                            <div class="form-element">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject">
+                            </div>
+                            <div class="form-element">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Interested in working together? I'd love to know more about your project."></textarea>
+                            </div>
+                            <input type="submit" value="Send message">
+                        </form>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer></footer>
+</body>
+
+<script src='https://cldup.com/S6Ptkwu_qA.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="script.js"></script>
+
+</html>
