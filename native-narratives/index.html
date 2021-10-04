@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/koala-favicon.png">
     <title>Native Narratives</title>
@@ -12,11 +13,12 @@
         <a class="logo" href="#intro">
             <img src="assets/native-narratives-logo-dark.png">
         </a>
-        <ul class="nav-items">
-            <li><a href="#about">About the Project</a></li>
-            <li><a href="#process">The Process</a></li>
-            <li><a href="#team">The Team</a></li>
+        <ul id="nav-items" class="nav-items">
+            <li><a href="#about" onclick="MobileNav()">About the Project</a></li>
+            <li><a href="#process" onclick="MobileNav()">The Process</a></li>
+            <li><a href="#team" onclick="MobileNav()">The Team</a></li>
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="mobileNav()"><i class="fa fa-bars"></i></a>
     </nav>
 
     <section id="intro" class="intro">
