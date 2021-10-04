@@ -23,12 +23,27 @@ window.onscroll = function() {
     prevScroll = currentScroll;
 }
 
+
 // --- MOBILE NAVIGATION --- //
+
 function mobileNav() {
-    var x = document.getElementById("nav-items");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+    window.onscroll = function() {
+        let currentScroll = window.pageYOffset;
+        if (prevScroll > currentScroll) {
+            desktopNav.style.top = "0";
+        } else {
+            desktopNav.style.top = "0";
+        }
+        prevScroll = currentScroll;
     }
-  }
+    
+    var nav = document.getElementById("nav-items");
+    if (nav.style.display === "block") {
+      nav.style.display = "none";
+      document.body.style.overflowY = '';
+    } else {
+      nav.style.display = "block";
+      document.body.style.overflowY = 'hidden';
+    }
+}
+
