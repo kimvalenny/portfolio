@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,800;1,600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TEXT STYLINGS */
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+}
+
+p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 12px 0;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+/* NAVIGATION BAR */
+
+#nav {
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 99;
+    position: sticky;
+    height: 100px;
+
+    transition: all 0.4s ease;
+    align-items: center;
+    position: sticky;
+}
+
+#nav.sticky-nav {
+    position: sticky;
+    transition: top 0.4s ease;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    background-color: #FFFFFF;
+}
+
+
+#nav ul {
+    list-style: none;
+    padding-left: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    background-color: white;
+}
+
+#nav a img {
+    height: 70px;
+}
+
+#nav a.logo {
+    display: block;
+    padding-top: 0.5em;
+}
+
+#nav a {
+    color: #1A3B29;
+}
+
+#nav ul a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    padding: 1em;
+}
+
+#nav ul a:hover {
+    color: #A6B84A;
+}
+
+/* --- INTRO --- */
+
+section#intro {
+    background-color: beige;
+    min-height: 75vh;
+    margin-top: -100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.1)), url('native-narratives-assets/3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#intro .intro-text {
+    text-align: center;
+    color: white;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 320px;
+    text-shadow: 0px 0px 10px #1A3B29;
+}
+
+#intro #title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    line-height: 1.1;
+    margin: 20px 0;
+    border-bottom: none;
+}
+
+#intro #subtitle {
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.intro button {
+    border: 2px solid #F0F0F0;
+    background-color: rgba(26, 59, 41, 0.2);
+    color: #F0F0F0;
+    font-weight: 500;
+}
+
+.intro button:hover {
+    color: #1A3B29;
+    background-color: #F0F0F0;
+}
+
+/* MAIN */
+
+main {
+    background-color: white;
+
+}
+
+/* SECTIONS */
+
+article {
+    max-width: 1000px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px 100px;
+}
+
+section h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #A6B84A;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+#process {
+    background-color: #1A3B29;
+    color: white;
+}
+
+/* MEET THE TEAM */
+
+#team .team-member {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+#team .text-container h2  {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#team .text-container h3 {
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+#team img {
+    object-fit: cover;
+    width: 120px;
+    height: 120px;
+    border-radius: 62px;
+    border: 4px solid #1A3B29;
+    margin-right: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #EEEEEE;
+    height: 150px;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+/* tablet view */
+@media (min-width: 600px) {
+    #nav li {
+        display: inline-block;
+    }
+
+    #intro .intro-text  {
+        padding-top: 200px;
+        max-width: 80%;
+    }
+}
+
+/* desktop view */
+@media (min-width: 900px) {
+    #nav {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    #nav ul {
+        margin: auto 0;
+    }
+
+    #intro .intro-text  {
+        padding-top: 150px;
+        max-width: 60%;
+    }
+}
