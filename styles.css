@@ -235,7 +235,8 @@ nav .nav-items a {
 #carousel {
     overflow: hidden;
     width: 100%;
-    height: 352px;
+    height: auto;
+    max-height: 450px;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -291,7 +292,7 @@ nav .nav-items a {
 }
 
 .experience-container .panel-text {
-    padding: 40px;
+    padding: 30px;
 }
 
 .panel-text h2 {
@@ -308,7 +309,7 @@ nav .nav-items a {
 }
 
 .experience-navigation {
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 [class^="label_"] {
@@ -355,22 +356,21 @@ nav .nav-items a {
 
 .projects .projects-container {
     display: flex;
-    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -10px;
 }
 
 .projects-container .project {
     position: relative;
     overflow: hidden;
     background-color: white;
-    width: 33%;
+    width: 320px;
+    height: 320px;
+    margin: 10px;
     float: left;
-    margin-right: 20px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.projects-container .project.right-element {
-    margin-right: 0;
 }
 
 .projects-container .project-cover {
@@ -573,8 +573,6 @@ nav .nav-items a {
 }
 
 .contact-details {
-    position: relative;
-    flex: initial;
     display: block;
     width: 100%;
     margin-right: 50px;
@@ -623,13 +621,12 @@ nav .nav-items a {
 }
 
 .contact-details .contact-image {
-    position: absolute;
     display: block;
     object-fit: cover;
     object-position: center;
     bottom: 0;
     width: 100%;
-    height: 320px;
+    height: 350px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.10);
 }
@@ -734,5 +731,149 @@ footer {
     .headshot img {
         right: 3%;
         transform: translate(-3%, 0%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-container .project {
+        flex: 1 1 320px;
+        height: 200px;
+    }
+    
+    .projects-container .project:last-child {
+        margin-right: calc(50% + 10px);
+    }
+
+    .project button {
+        display: none;
+    }
+}
+
+@media (max-width: 1000px) {
+    .contact-container {
+        display: block;
+    }
+
+    .contact-details {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .contact-details .contact-image {
+        margin-left: 7%;
+        height: 315px;
+    }
+
+    .contact-form {
+        width: auto;
+    }
+}
+
+@media (max-width: 780px) {
+    :root {
+        font-size: 85%;
+    }
+
+    article {
+        padding: 40px;
+    }
+
+    /* TEMPORARY - NEED TO UPDATE */
+    #nav.nav {
+        padding: 25px 40px;
+        height: 25px;
+    }
+
+    nav .logo img {
+        height: 35px;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+    
+    /* end of temp nav fix */
+
+    .intro .intro-text {
+        top: 15%;
+        left: unset;
+        transform: unset;
+        margin: 0 40px;
+    }
+
+    #title {
+        font-size: 4rem;
+    }
+
+    #subtitle {
+        font-size: 1.5rem;
+    }
+
+    .intro-text p {
+        font-size: 1.1em;
+        margin: 6px 0 12px 0;
+    }
+
+    .headshot img {
+        transform: unset;
+        right: 5%;
+        height: 60%;
+    }
+
+    #carousel .panel-wrapper {
+        height: 450px;
+    }
+
+    .experience-navigation {
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: flex;
+    }
+
+    [class^="label_"] {
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .experience-navigation .label_7 {
+        margin-right: 0;
+    }
+
+    .experience-container {
+        display: block;
+    }
+
+    .experience-container .panel-text {
+        padding: 25px;
+    }
+
+    .panel-text h2 {
+        margin-bottom: 8px;
+    }
+
+    .panel-text p {
+        margin-bottom: 15px;
+    }
+
+    .projects-container .project-overview {
+        padding: 25px;
+    }
+
+    .projects-container .project:last-child {
+        margin-right: 10px;
+    }
+
+    .contact-details {
+        display: block;
+        margin-bottom: 45px;
+    }
+
+    .contact-details .contact-image {
+        margin-left: 0;
+        height: 250px;
+    }
+
+    .contact-form {
+        padding: 25px;
     }
 }
