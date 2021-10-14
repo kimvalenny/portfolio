@@ -356,22 +356,21 @@ nav .nav-items a {
 
 .projects .projects-container {
     display: flex;
-    margin: 20px 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -10px;
 }
 
 .projects-container .project {
     position: relative;
     overflow: hidden;
     background-color: white;
-    width: 33%;
+    width: 320px;
+    height: 320px;
+    margin: 10px;
     float: left;
-    margin-right: 20px;
     border-radius: 4px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
-.projects-container .project.right-element {
-    margin-right: 0;
 }
 
 .projects-container .project-cover {
@@ -735,6 +734,21 @@ footer {
     }
 }
 
+@media (max-width: 1200px) {
+    .projects-container .project {
+        flex: 1 1 320px;
+        height: 200px;
+    }
+    
+    .projects-container .project:last-child {
+        margin-right: calc(50% + 10px);
+    }
+
+    .project button {
+        display: none;
+    }
+}
+
 @media (max-width: 1000px) {
     .contact-container {
         display: block;
@@ -830,7 +844,7 @@ footer {
     }
 
     .experience-container .panel-text {
-        padding: 20px;
+        padding: 25px;
     }
 
     .panel-text h2 {
@@ -839,6 +853,14 @@ footer {
 
     .panel-text p {
         margin-bottom: 15px;
+    }
+
+    .projects-container .project-overview {
+        padding: 25px;
+    }
+
+    .projects-container .project:last-child {
+        margin-right: 10px;
     }
 
     .contact-details {
@@ -852,6 +874,6 @@ footer {
     }
 
     .contact-form {
-        padding: 20px;
+        padding: 25px;
     }
 }
