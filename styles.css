@@ -714,8 +714,18 @@ nav .nav-items a {
 /* ----- FOOTER ----- */
 
 footer {
-    background-color: #EEEEEE;
-    height: 100px;
+    max-width: 1000px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+footer img {
+    height: 30px;
+    margin-right: 15px;
 }
 
 
@@ -776,6 +786,10 @@ footer {
 
     article {
         padding: 40px;
+    }
+
+    footer {
+        padding: 10px 40px;
     }
 
     /* TEMPORARY - NEED TO UPDATE */
