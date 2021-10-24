@@ -713,7 +713,7 @@ nav .nav-items a {
 
 /* ----- FOOTER ----- */
 
-/* footer {
+footer {
     max-width: 1000px;
     width: auto;
     margin-left: auto;
@@ -726,7 +726,7 @@ nav .nav-items a {
 footer img {
     height: 30px;
     margin-right: 15px; 
-} */
+}
 
 
 /* ----- MEDIA QUERIES ----- */
