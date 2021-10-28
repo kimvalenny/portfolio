@@ -230,7 +230,22 @@ section p {
 
 footer {
     background-color: #EEEEEE;
-    height: 150px;
+}
+
+footer article {
+    padding: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer article p {
+    font-size: 1em;
+}
+
+#project-name {
+    font-weight: bold;
 }
 
 
@@ -284,6 +299,10 @@ footer {
         margin-left: auto;
         margin-right: auto;
         padding: 70px 100px;
+    }
+
+    footer article {
+        padding: 30px 100px;
     }
 
     #team .team-member {
