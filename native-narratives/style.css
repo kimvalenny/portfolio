@@ -22,6 +22,11 @@ h3 {
   margin: 0;
   font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h3 {
+  margin: 10px 0;
 }
 
 p {
@@ -29,6 +34,10 @@ p {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 1.1em;
+}
+
+.project-name {
+  font-weight: bold;
 }
 
 button {
@@ -117,13 +126,12 @@ button {
 /* --- INTRO --- */
 
 section#intro {
-  min-height: 75vh;
-  margin-top: -100px;
+  min-height: 70vh;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.1),
       rgba(0, 0, 0, 0.1)
     ),
-    url("assets/native-narratives-book.jpg");
+    url("assets/native-narratives-kids.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,14 +142,14 @@ section#intro {
   color: white;
   max-width: 90%;
   margin: 0 auto;
-  padding-top: 53vh;
-  text-shadow: 0px 0px 10px #888888;
+  padding-top: 30vh;
+  text-shadow: 0px 0px 10px #262626;
 }
 
 #intro #title {
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.1;
   margin-bottom: 10px;
   padding-bottom: 0;
@@ -151,6 +159,7 @@ section#intro {
 #intro #subtitle {
   text-transform: uppercase;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .intro button {
@@ -169,6 +178,14 @@ section#intro {
 
 main {
   background-color: white;
+}
+
+.banner-image {
+  background-image: url("assets/native-narratives-book.jpg");
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* PROJECT (embedded book) */
@@ -209,9 +226,23 @@ section p {
   margin-bottom: 15px;
 }
 
-#process {
-  background-color: #1a3b29;
-  color: white;
+#team-photo {
+  margin: 30px auto 40px auto;
+  max-width: 560px;
+}
+
+#team-photo img {
+  width: auto;
+  max-width: 100%;
+  margin: 0 10px 10px 0;
+  box-shadow: 10px 10px 0px #1a3b29;
+}
+
+#team-photo p {
+  margin: 10px 10px 0 10px;
+  font-style: italic;
+  line-height: 1.3;
+  font-size: 1em;
 }
 
 /* MEET THE TEAM */
@@ -235,6 +266,7 @@ section p {
 #team .text-container h3 {
   font-size: 1rem;
   letter-spacing: normal;
+  text-transform: none;
   margin-bottom: 6px;
 }
 
@@ -267,10 +299,6 @@ footer article {
 
 footer article p {
   font-size: 1em;
-}
-
-#project-name {
-  font-weight: bold;
 }
 
 /* ---- MEDIA QUERIES ---- */
@@ -314,7 +342,7 @@ footer article p {
   }
 
   #intro .intro-text {
-    padding-top: 60vh;
+    max-width: unset;
   }
 
   article {
@@ -327,6 +355,10 @@ footer article p {
 
   footer article {
     padding: 30px 100px;
+  }
+
+  .banner-image {
+    height: 450px;
   }
 
   #project {
