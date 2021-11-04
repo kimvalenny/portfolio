@@ -171,6 +171,22 @@ main {
   background-color: white;
 }
 
+/* PROJECT (embedded book) */
+#project {
+  background-color: #4e5565;
+  height: 300px;
+  position: relative;
+}
+
+#project .grey-box {
+  background-color: #4e5565;
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  height: 22px;
+  width: 160px;
+}
+
 /* SECTIONS */
 
 article {
@@ -220,6 +236,10 @@ section p {
   font-size: 1rem;
   letter-spacing: normal;
   margin-bottom: 6px;
+}
+
+#team .text-container p {
+  margin-bottom: 0;
 }
 
 #team img {
@@ -309,14 +329,18 @@ footer article p {
     padding: 30px 100px;
   }
 
+  #project {
+    height: 600px;
+  }
+
   #team .team-member {
     align-items: center;
   }
 
   #team img {
-    width: 120px;
-    height: 120px;
-    border-radius: 62px;
-    margin-right: 40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    margin-right: 30px;
   }
 }
