@@ -135,6 +135,7 @@ nav .logo img {
 
 nav .nav-items {
     margin: 0;
+    padding-left: 20px;
 }
 
 nav .nav-items li {
@@ -224,7 +225,7 @@ nav .nav-items a {
 .experience-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 #carousel, .experience-navigation {
@@ -236,7 +237,7 @@ nav .nav-items a {
     overflow: hidden;
     width: 100%;
     height: auto;
-    max-height: 450px;
+    max-height: 480px;
     border-radius: 4px;
     background-color: #fff;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -352,6 +353,21 @@ nav .nav-items a {
     background-color: #536E8B;
 }
 
+
+/* ----- INVOLVEMENTS GRID ----- */
+
+.involvements article {
+    padding-bottom: 0;
+}
+
+.involvements .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 -10px;
+}
+
+
 /* ----- PROJECTS GRID ----- */
 
 .projects .projects-container {
@@ -411,7 +427,7 @@ nav .nav-items a {
     -webkit-box-orient: vertical;
 }
 
-.projects .project-tag {
+.project .project-tag, .projects .project-tag {
     font-size: 0.75em;
     font-weight: normal;
     letter-spacing: 0.5px;
@@ -807,6 +823,10 @@ footer img {
     }
     
     /* end of temp nav fix */
+
+    .intro {
+        margin-top: -75px;
+    }
 
     .intro .intro-text {
         top: 15%;
